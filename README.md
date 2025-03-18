@@ -39,6 +39,12 @@ To control the robot using the keyboard, we need to run the following command in
 roscore
 ```
 
+Now we should start the serial connection of the robot:
+
+```
+rosrun rosserial_python serial_node.py _port:=tcp
+```
+
 Then we can run the following command to control the robot using the keyboard.
 
 ```bash
